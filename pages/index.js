@@ -60,14 +60,14 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <span>Solidly allows low cost, near 0 slippage trades on uncorrelated or tightly correlated assets.</span> The protocol incentivizes fees instead of liquidity.
+          <span>Solidly allows low cost, near 0 slippage trades on uncorrelated or tightly correlated assets built on Fantom.</span><br /><br />The protocol incentivizes fees instead of liquidity.
         </p>
       </main>
 
       <footer className={styles.footer}>
 
         <Grid container spacing={0} className={styles.footerGrid}>
-        
+
           <Grid item lg={3} md={3} sm={12} xs={12} className={styles.vAlign}>
             <a href="https://github.com/andrecronje/solidly" target="_blank" rel="noopener noreferrer">
               <GitHubIcon className={styles.icon} />
