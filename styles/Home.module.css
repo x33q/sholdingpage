@@ -67,6 +67,10 @@
   max-width: 800px;
 }
 
+.description span {
+  color: #7E99B0;
+}
+
 .logo {
   transform: scale(8);
   position: fixed;
