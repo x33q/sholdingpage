@@ -1,6 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import SvgIcon from '@mui/material/SvgIcon';
+import Grid from '@mui/material/Grid';
+
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import TelegramIcon from '@mui/icons-material/Telegram';
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -58,14 +65,38 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Read the article on
-        <a
-          href="https://andrecronje.medium.com/solidly-preparation-for-launch-8e653ce8a428"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Medium here
-        </a>
+
+        <Grid container spacing={0} className={styles.footerGrid}>
+        
+          <Grid item lg={3} md={3} sm={12} xs={12} className={styles.vAlign}>
+            <a href="https://github.com/andrecronje/solidly" target="_blank" rel="noopener noreferrer">
+              <GitHubIcon className={styles.icon} />
+              Github
+            </a>
+          </Grid>
+
+          <Grid item lg={3} md={3} sm={12} xs={12} className={styles.vAlign}>
+            <a href="https://twitter.com/solidlyexchange" target="_blank" rel="noopener noreferrer">
+                  <TwitterIcon className={styles.icon} />
+                  Twitter
+            </a>
+          </Grid>
+
+          <Grid item lg={3} md={3} sm={12} xs={12} className={styles.vAlign}>
+            <a href="https://t.me/solidlyexchange" target="_blank" rel="noopener noreferrer">
+                  <TelegramIcon className={styles.icon} />
+                  Telegram
+            </a>
+          </Grid>
+
+          <Grid item lg={3} md={3} sm={12} xs={12} className={styles.vAlign}>
+            <a href="https://andrecronje.medium.com/solidly-preparation-for-launch-8e653ce8a428" target="_blank" rel="noopener noreferrer">
+                  <ArticleIcon className={styles.icon} />
+                  Medium
+            </a>
+          </Grid>
+
+        </Grid>
 
       </footer>
     </div>
